@@ -1,0 +1,104 @@
+<!-- Challenge 2: Traffic Signal System (Async/Await Edition)
+Problem Statement
+You are building a simple traffic light simulation — the same one you created earlier using Promise chaining — but this time, you’ll rewrite it using async/await.
+
+Your goal is to convert your previous Promise-based code into one that uses async functions and the await keyword for a cleaner, easier-to-read version.
+
+Your Task
+Create a webpage that behaves as follows:
+
+The page displays one circle in the center of the screen, representing the traffic light.
+A Start button appears below the light. The sequence begins only when the player clicks Start. The Start button should be disabled once clicked.
+A timer is displayed below the light, showing how many seconds are left for the current color.
+The color of the light changes in this order:
+Green for 6 seconds
+Yellow for 2 seconds
+Red for 6 seconds
+After all three lights finish, show the text “Cycle complete.” below the light. Also, re-enable the Start button.
+Use async/await to control the timing of color changes. Do not use .then() chaining.
+Each color change should be handled by an async function that uses await to pause before moving to the next light. -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>My Page</title>
+  <style>
+  body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  gap: 10px;
+}
+
+#light {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: gray;
+}
+</style>
+</head>
+<body>
+ <div  class="container">
+ <div id="light"></div>
+  <button id="btn">Start</button>
+    <p id="timer">0</p>
+ </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html> -->
+
+
+
+
+<!-- Challenge 3: File Upload Simulator
+Problem Statement
+You are building a simple simulation of a file upload process. The page will show the upload steps — Uploading file → Processing file → Saving result — one by one,
+ each with a delay. Sometimes, one of these steps may fail, just like a real upload might.
+
+Your Task
+Create a webpage that behaves as follows:
+
+The page displays a button labeled Start Upload and a message area below it.
+When the user clicks the button:
+The button is disabled to prevent multiple uploads.
+The message area updates to show progress in the following order:
+“Uploading file…” (takes 3 seconds)
+“Processing file…” (takes 2 seconds)
+“Saving result…” (takes 2 seconds)
+Each step appears only after the previous one finishes.
+Each step has a small random chance (say, 30%) to fail. Use Math.random() — if Math.random() < 0.3, the step fails; otherwise, it succeeds.
+If all steps are completed successfully, show "Upload successful!" and set the text color to green.
+If any step fails, immediately show "Upload failed! Please try again." and set the text color to red.
+The button should re-enable once the process (success or failure) finishes.
+Use async/await and try...catch to manage all asynchronous behavior — do not use .then() or .catch() -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Upload Simulator</title>
+</head>
+<body>
+  <button id="btn">Start Upload</button>
+  <p id="para"></p>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
