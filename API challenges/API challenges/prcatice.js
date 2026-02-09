@@ -72,3 +72,28 @@
 // console.log(moveszero([0,1,0,3,12]));
 
 
+// function reverse(string){
+//     let newstring=""
+//     for(let i=string.length-1;i>=0;i--){
+       
+//        newstring+=(string[i])
+//     }
+//     return newstring
+// }
+
+// console.log(reverse("neha"))
+
+// function large(array){
+//     let max=array[0]
+//     for(let i=0 ; i<array.length; i++){
+//         if(array[i]>max){
+//             max=array[i]
+//         }
+//     }
+//     return max
+
+// }
+// console.log(large([3,67,98,9,76,54,3]))
+
+
+

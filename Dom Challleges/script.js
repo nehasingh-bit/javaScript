@@ -222,3 +222,139 @@
 // displayQuestion();
 
 
+// ..................................Dom practice questions from sensai...................
+
+// let para=document.getElementById("para")
+// let btn=document.getElementById("btn")
+// let cat=document.getElementById("cat")
+// btn.addEventListener("click",()=>{
+//     para.innerText="Welcome back!"
+//       let select = document.createElement("select");
+//       select.innerHTML = `
+//     <option disabled selected>Select category</option>
+//     <option>History</option>
+//     <option>Math</option>
+//     <option>English</option>
+//   `;
+
+//   cat.appendChild(select);
+// })
+
+
+//   ............................2.....
+
+// let para=document.getElementById("para")
+// let count=0
+// let btn=document.getElementById("btn").addEventListener("click",()=>{
+//     count++
+//     para.innerText=`count:${count}`
+// })
+
+
+// ........................3.........
+
+// let para = document.getElementById("para");
+// let btn = document.getElementById("btn");
+
+// btn.addEventListener("click", () => {
+//   if (para.style.display === "none") {
+//     // show
+//     para.style.display = "block";
+//     btn.innerText = "Hide";
+//   } else {
+//     // hide
+//     para.style.display = "none";
+//     btn.innerText = "Show";
+//   }
+// });
+
+// .......................................4.
+// let para = document.getElementById("para");
+// let red = document.getElementById("red").addEventListener("click",()=>{
+//     para.style.color="red"
+// })
+// let green = document.getElementById("green").addEventListener("click",()=>{
+//     para.style.color="green"
+// })
+// let blue = document.getElementById("blue").addEventListener("click",()=>{
+//     para.style.color="blue"
+// })
+
+
+// ................................5...............
+//  let para = document.getElementById("para");
+//  let input= document.getElementById("input");
+//   let btn =document.getElementById("btn").addEventListener("click",()=>{
+//     if(input.value.trim()!==""){
+//       para.innerText=input.value
+//       para.style.color="blue"
+//     }else{
+//         para.innerText="enter input"
+//         para.style.color="red"
+//     }
+//   })
+
+
+// ....................6.............
+//  let list = document.getElementById("list");
+//  let input= document.getElementById("input");
+//   let btn =document.getElementById("btn").addEventListener("click",()=>{
+//     let item=document.createElement("li")
+//     item.innerText=input.value
+//      list.appendChild(item)
+//      input.value=""
+//   })
+
+
+// ....................7..............
+
+
+//  let para= document.getElementById("para");
+//  let select= document.getElementById("select");
+//  select.addEventListener("change",()=>{
+//     para.textContent=select.value
+//  })
+
+// ........................8..................
+
+// let para= document.getElementById("para");
+// let btn= document.getElementById("btn")
+// btn.addEventListener("click",()=>{
+//     para.innerText="text Submitted"
+//     btn.disabled=true
+//      btn.textContent = "Submitted ✔";
+
+// })
+
+// .......................9.....................
+
+//  let para= document.getElementById("para");
+// let btn= document.getElementById("btn")
+// btn.addEventListener("click",()=>{
+//     para.remove()
+
+// })
+
+
+// ..............10................
+
+// let title=document.createElement("input")
+// title.placeholder="Title"
+// let discription=document.createElement("input")
+// discription.placeholder="Discription"
+// let btn=document.createElement("button")
+// btn.textContent="Create Card"
+// document.body.append(title, discription, btn)
+
+// btn.addEventListener("click",()=>{
+//     let div=document.createElement("div")
+//     let h3=document.createElement("h3")
+//     h3.innerText=title.value
+//     let para=document.createElement("p")
+//     para.innerText=discription.value
+    
+//     div.append(h3,para)
+//     document.body.append(div)
+    
+    
+// })
